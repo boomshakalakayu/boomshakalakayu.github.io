@@ -1,0 +1,82 @@
+@import "basic.less";
+
+.service {
+	#header	{
+		position: absolute;
+    	width: 100%;
+	}
+
+	#content {
+		.header {
+			&.black {
+				.title, #breadcrumbs li {
+					color: black;
+				}
+			}
+		}
+		.special-offer {
+			padding: 60px 0;
+			.promo-info {
+				float: left;
+				.title {
+					margin-bottom: 10px;
+					font-size: 18px;
+					em {
+						font-style: normal;
+						color: @branding-color;
+					}
+				}
+			}
+			.promo-button {
+				float: right;
+				a {
+					margin: 0;
+				}
+			}
+			.desc {
+				margin: 0;
+				color: @text-gray;
+			}
+		}
+	}
+	.services {
+		.row {
+			>div {
+				padding: 50px;
+				&:hover {
+					background: black;
+					color: white;
+					i {
+						color: @branding-color;
+					}
+					transition: all .3s;
+				}
+			}
+		}
+	}
+	.special-services {
+		.title-block {
+			margin-bottom: 30px;
+			.title {
+				margin-bottom: 5px;
+			}
+			.subtitle {
+				margin: 0;
+			}
+		}
+		.big-dot {
+			li {
+				float: left;
+				width: 50%;
+				margin-bottom: 10px;
+				line-height: 1.5;
+				&:before {
+					font-family: "fontello";
+					content: '\f1db';
+					padding-right: 10px;
+					color: #757575;
+				}
+			}
+		}
+	}
+}
